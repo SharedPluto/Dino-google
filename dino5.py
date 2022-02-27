@@ -3,13 +3,10 @@ import keyboard
 import time
 import math
 
-# small check
-
 # Helper function to get value of pixel in image
 def getPixel(Image,x, y):
     px = Image.load()
     return px[x, y]
-
 
 # Screen Dimensions
 top, left, width, height = 102, 0, 1902, 776
@@ -52,9 +49,14 @@ while True:
 
     # Get the color of the world background
     bgColor = getPixel(sct_img, 440, 30)
+    
+
 
     for i in reversed(range(x_start, x_end)):
-        # 
+        if gui.pixel(722, 417)[1, 2, 3] == (173,118,87):
+            # then press the down key
+            # I do not know how to initiate the down key so you do this part 
+            # just put the code over here 
         if getPixel(sct_img,i,y_search2) != bgColor and getPixel(sct_img,i,y_search) == bgColor:
              keyboard.press('down') #crouch
         elif getPixel(sct_img,i,y_search) != bgColor and getPixel(sct_img,i,y_search2) == bgColor:
