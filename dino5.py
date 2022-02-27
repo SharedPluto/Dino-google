@@ -3,6 +3,8 @@ import keyboard
 import time
 import math
 
+# small check
+
 # Helper function to get value of pixel in image
 def getPixel(Image,x, y):
     px = Image.load()
