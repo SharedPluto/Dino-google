@@ -53,6 +53,7 @@ while True:
 
 
     for i in reversed(range(x_start, x_end)):
+        # YOU CAN CHANGE THE POSITION OF THE CHEKCS IF ANYTHING IS NOT WORKING RIGHT
         if gui.pixel(722, 417)[0] == 173:
             if gui.pixel(722, 417) == 118:
                 if gui.pixel(722, 417) == 87:
@@ -60,7 +61,8 @@ while True:
                     # I do not know how to initiate the down key so you do this part 
                     # just put the code over here 
                     print("saw brown obstacle")
-        
+        # you can add more blocks life this for more obstacles
+        # right now I have only added 1 obstacle can you please add the others 
         if getPixel(sct_img,i,y_search2) != bgColor and getPixel(sct_img,i,y_search) == bgColor:
              keyboard.press('down') #crouch
         elif getPixel(sct_img,i,y_search) != bgColor and getPixel(sct_img,i,y_search2) == bgColor:
