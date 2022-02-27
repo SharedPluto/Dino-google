@@ -53,11 +53,14 @@ while True:
 
 
     for i in reversed(range(x_start, x_end)):
-        if gui.pixel(722, 417)[0, 1, 2] == (173,118,87):
-            # then press the down key
-            # I do not know how to initiate the down key so you do this part 
-            # just put the code over here 
-            print("saw brown obstacle")
+        if gui.pixel(722, 417)[0] == 173:
+            if gui.pixel(722, 417) == 118:
+                if gui.pixel(722, 417) == 87:
+                    # then press the down key
+                    # I do not know how to initiate the down key so you do this part 
+                    # just put the code over here 
+                    print("saw brown obstacle")
+        
         if getPixel(sct_img,i,y_search2) != bgColor and getPixel(sct_img,i,y_search) == bgColor:
              keyboard.press('down') #crouch
         elif getPixel(sct_img,i,y_search) != bgColor and getPixel(sct_img,i,y_search2) == bgColor:
